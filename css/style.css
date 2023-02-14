@@ -36,7 +36,6 @@ main{
   max-width: 1200px;
   width: 75%;
   margin: 40px auto;
-  padding-left: 50px;
 }
 
 /* barra di navigazione */
@@ -44,6 +43,7 @@ main{
   border-bottom: 2px solid #F6F8F9;
   padding-top: 15px;
   padding-bottom: 10px;
+  padding-left: 50px;
 }
 .actions ul{
   list-style: none;
@@ -63,4 +63,35 @@ main{
 .unselected{
   color: #DBDFE2;
   border: 1px solid #DBDFE2;
+}
+
+/* to do list */
+.container{
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container section{
+  padding-bottom: 20px;
+}
+
+.container section h4, .container section p{
+  line-height: 30px;
+}
+
+.done::before{
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.undone::before{
+  content: '\2717 ';
+  color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 2px;
 }
