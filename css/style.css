@@ -36,6 +36,7 @@ main{
   max-width: 1200px;
   width: 75%;
   margin: 40px auto;
+  border-radius: 2%;
 }
 
 /* barra di navigazione */
