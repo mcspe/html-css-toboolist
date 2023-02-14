@@ -4,3 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* regole generali */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* barra superiore */
+header{
+  padding: 10px 20px;
+  width: 100vw;
+}
+
+header img{
+  vertical-align: middle;
+}
+
+header strong{
+  font-size: 40px;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
