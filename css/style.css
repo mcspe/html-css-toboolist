@@ -100,3 +100,62 @@ main{
   border-radius: 50%;
   padding: 2px;
 }
+
+.label{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.editorial .label::after{
+  content: 'Editorial';
+  font-size: 10px;
+  background-color: #45ABEA;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
+
+.q-one .label::after{
+  content: 'Q-1 Goals';
+  font-size: 10px;
+  background-color: #9C72E4;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
+
+.recruiting .label::after{
+  content: 'Recruiting';
+  font-size: 10px;
+  background-color: #64C0A9;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
+
+.mobile .label::after{
+  content: 'Mobile';
+  font-size: 10px;
+  background-color: #F29E33;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
+
+.web .label::after{
+  content: 'Website';
+  font-size: 10px;
+  background-color: #D863A1;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
+
+.sales .label::after{
+  content: 'Sales';
+  font-size: 10px;
+  background-color: #B0C926;
+  padding: 5px;
+  color: whitesmoke;
+  border-radius: 20%;
+}
