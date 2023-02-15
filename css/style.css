@@ -39,51 +39,58 @@ main{
   border-radius: 2%;
 }
 
-/* barra di navigazione */
+/* barra azioni */
 .actions{
-  border-bottom: 2px solid #F6F8F9;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-}
-.actions ul{
-  list-style: none;
+  border-bottom: 3px solid #F6F8F9;
+  padding: 15px 50px 10px;
 }
 
-.actions ul li{
-  display: inline-block;
-  border-radius: 5%;
+.actions button{
+  border: none;
+  border-radius: 5px;
   padding: 5px 10px;
 }
 
-.selected{
+.actions button:hover{
+  cursor: pointer;
+}
+
+.actions button.selected{
   background-color: #47ADF1;
   color: white;
 }
 
-.unselected{
+.actions button.unselected{
+  background-color: white;
   color: gray;
   border: 1px solid grey;
 }
 
 /* to do list */
 .container{
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 50px 10px;
 }
 
-.container section{
+ul{
+  list-style: none;
+}
+
+.container .section{
   padding-bottom: 20px;
 }
 
-.container section h4, .container section span{
+.container .section li{
   line-height: 30px;
 }
 
-.check{
-  display: inline-block;
-  margin-right: 10px;
+.container .section span{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container .section span::before{
+  content: '\25BE';
+  margin-right: 5px;
 }
 
 .done::before{
@@ -92,6 +99,7 @@ main{
   border: 1px solid green;
   border-radius: 50%;
   padding: 2px;  
+  margin-right: 10px;
 }
 
 .undone::before{
@@ -100,63 +108,65 @@ main{
   border: 1px solid red;
   border-radius: 50%;
   padding: 2px;
+  margin-right: 10px;
 }
 
-.label{
-  display: inline-block;
-  margin-left: 5px;
-}
-
-.editorial .label::after{
+.editorial::after{
   content: 'Editorial';
   font-size: 10px;
   background-color: #45ABEA;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.q-one .label::after{
+.q-one::after{
   content: 'Q-1 Goals';
   font-size: 10px;
   background-color: #9C72E4;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.recruiting .label::after{
+.recruiting::after{
   content: 'Recruiting';
   font-size: 10px;
   background-color: #64C0A9;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.mobile .label::after{
+.mobile::after{
   content: 'Mobile';
   font-size: 10px;
   background-color: #F29E33;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.web .label::after{
+.web::after{
   content: 'Website';
   font-size: 10px;
   background-color: #D863A1;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.sales .label::after{
+.sales::after{
   content: 'Sales';
   font-size: 10px;
   background-color: #B0C926;
   padding: 5px;
   color: whitesmoke;
-  border-radius: 20%;
+  border-radius: 10px;
+  margin-left: 10px;
 }

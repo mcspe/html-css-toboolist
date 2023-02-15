@@ -17,124 +17,55 @@
   <!-- corpo principale -->
   <main class="top">
 
-    <!-- barra di navigazione -->
+    <!-- barra azioni -->
     <nav class="actions">
-      <ul>
-        <li class="selected">Add Task</li>
-        <li class="unselected">Add Section</li>
-      </ul>
+
+      <button class="selected">Add Task</button>
+      <button class="unselected">Add Section</button>
+      
     </nav>
 
     <!-- to do list -->
     <div class="container">
 
-        <section class="section">
+        <ul class="section">
 
-          <h4>&#x25BE; New Task</h4>
+          <li>
+            <span>New Task</span>
+            <ul class="task">
+              <li class="done editorial">Quarterly Newsletter</li>
+            </ul>
+          </li>
+          
+        </ul>
 
-          <div class="task editorial">
+        <ul class="section">
 
-            <div class="check done"></div>
+          <li>
+            <span>Today</span>
+            <ul class="task">
+              <li class="done editorial">Recruiting blog post</li>
+              <li class="done q-one">Mobile App launch</li>
+              <li class="undone recruiting">Interview John H.</li>
+              <li class="done mobile">Summit update to mobile</li>
+            </ul>
+          </li>
 
-            <span>Quarterly Newsletter</span>
+        </ul>
 
-            <div class="label"></div>
+        <ul class="section">
 
-          </div>
+          <li>
+            <span>Upcoming</span>
+            <ul class="task">
+              <li class="undone">Schedule meeting with Alex</li>
+              <li class="done web">Homepage refresh</li>
+              <li class="done sales">Onboard new Sales team members</li>
+              <li class="done editorial">Review editorial calendar</li>
+            </ul>
+          </li>
 
-        </section>
-
-        <section class="section">
-
-          <h4>&#x25BE; Today</h4>
-
-          <div class="task editorial">
-
-            <div class="check done"></div>
-
-            <span>Recruiting blog post</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task q-one">
-
-            <div class="check done"></div>
-
-            <span>Mobile App launch</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task recruiting">
-
-            <div class="check undone"></div>
-
-            <span>Interview John H.</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task mobile">
-
-            <div class="check done"></div>
-
-            <span>Summit update to mobile</span>
-
-            <div class="label"></div>
-
-          </div>
-
-        </section>
-
-        <section class="section">
-
-          <h4>&#x25BE; Upcoming</h4>
-
-          <div class="task">
-
-            <div class="check undone"></div>
-
-            <span>Schedule meeting with Alex</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task web">
-
-            <div class="check done"></div>
-
-            <span>Homepage refresh</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task sales">
-
-            <div class="check done"></div>
-
-            <span>Onboard new Sales team members</span>
-
-            <div class="label"></div>
-
-          </div>
-
-          <div class="task editorial">
-
-            <div class="check done"></div>
-
-            <span>Review editorial calendar</span>
-
-            <div class="label"></div>
-
-          </div>
-
-        </section>
+        </ul>
                 
     </div>
     <!-- /to do list -->
